@@ -4,5 +4,5 @@ main: com.suitesquad.cachecraft.Cachecraft
 api-version: 1.18
 commands:
   spawngeocache:
-    description:
-    usage:
+    description: Spawns a GeoCache.
+    usage: /spawngeocache
