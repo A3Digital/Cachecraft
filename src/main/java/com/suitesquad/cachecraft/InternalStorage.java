@@ -34,9 +34,11 @@ public class InternalStorage {
             z = Integer.parseInt(elements.get(3));
             //Format the leaderboard data and generate your hashmap
             leaderboard = new HashMap<>();
-            for(String leaderboardPosition : elements.get(4).split(",")){
-                String[] userTicks = leaderboardPosition.split(":");
-                leaderboard.put(userTicks[0],Integer.parseInt(userTicks[1]));
+            if(elements.get(4).length() > 0){
+                for(String leaderboardPosition : elements.get(4).split(",")){
+                    String[] userTicks = leaderboardPosition.split(":");
+                    leaderboard.put(userTicks[0],Integer.parseInt(userTicks[1]));
+                }
             }
         }
     }
