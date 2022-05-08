@@ -1,0 +1,4 @@
+name: Cachecraft
+version: '${project.version}'
+main: com.suitesquad.cachecraft.Cachecraft
+api-version: 1.18
